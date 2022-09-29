@@ -2,7 +2,7 @@
 Little ESP32 IoT experiment
 
 -Source for ESP32-S2 target and AHT20 temperature sensor<br />
--Node server source for back and front end
+-Node server & client source for back and front end
 
 No sockets! Just a react element :)
 <br />
