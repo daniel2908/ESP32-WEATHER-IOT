@@ -85,7 +85,7 @@ void app_main(void)
     i2c_setup();
 
     wifi_init();
-    ESP_ERROR_CHECK(wifi_connect_sta("Smith", "7867023537", 10000));
+    ESP_ERROR_CHECK(wifi_connect_sta("*", "*", 10000));
     xTaskCreatePinnedToCore(&rest, "api", 10096,NULL,0,NULL,1 );
     xTaskCreatePinnedToCore(&aht20_read_measures, "task_read_ath20",  10096, NULL, 0, NULL, 1);
 }
